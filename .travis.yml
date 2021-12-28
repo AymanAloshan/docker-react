@@ -8,4 +8,4 @@ before_install:
   - docker build -t aymansaloshan/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true aymanaloshan/docker-react npm run test
+  - docker run aymanaloshan/docker-react npm run test -- --coverage
