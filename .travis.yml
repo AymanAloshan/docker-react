@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t aymansaloshan/docker-react -f Dockerfile.dev .
+  - docker build -t aymanaloshan/docker-react -f Dockerfile.dev .
 
 script:
   - docker run aymanaloshan/docker-react npm run test -- --coverage
